@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
+    "test": "jest"
   },
   "devDependencies": {
     "jest": "^29.7.0"
