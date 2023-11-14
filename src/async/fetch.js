@@ -25,4 +25,8 @@ const fetchTodoCallback = (callback) => {
     .catch(error => callback(error));
 }
 
-module.exports = {fetchTodo, fetchTodoError, fetchTodoCallback};
+module.exports = {
+  fetchTodo,
+  fetchTodoError,
+  fetchTodoCallback
+};
