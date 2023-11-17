@@ -80,7 +80,7 @@ test("mock", () => {
   console.log(filterTestFn.mock.calls[1][0]); // 12
 });
 
-test('tameshi', () => {
+test("tameshi", () => {
   const mockFn = jest.fn();
   console.log(mockFn());
 
@@ -95,7 +95,7 @@ test('tameshi', () => {
   console.log(mockFn());
   console.log(mockFn());
 
-  mockFn.mockReturnValueOnce('x');
+  mockFn.mockReturnValueOnce("x");
   console.log(mockFn());
   console.log(mockFn());
   console.log(mockFn());
@@ -105,8 +105,8 @@ test('tameshi', () => {
   console.log(mockFn());
   console.log(mockFn());
 
-  mockFn.mockReturnValueOnce('x');
+  mockFn.mockReturnValueOnce("x");
   console.log(mockFn());
   console.log(mockFn());
   console.log(mockFn());
-})
+});

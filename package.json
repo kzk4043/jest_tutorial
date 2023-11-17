@@ -1,6 +1,8 @@
 {
+  "license": "UNLICENSED",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prettier": "prettier --write \"src/**/*.js\""
   },
   "devDependencies": {
     "jest": "^29.7.0",

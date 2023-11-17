@@ -1,5 +1,5 @@
-const foo = 'foo';
-const bar = () => 'bar';
+const foo = "foo";
+const bar = () => "bar";
 // default () => 'baz';
 
 // module.exports = () => 'baz';

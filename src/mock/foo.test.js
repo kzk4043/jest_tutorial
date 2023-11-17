@@ -1,19 +1,19 @@
-jest.mock('./foo'); // this happens automatically with automocking
-const foo = require('./foo');
+jest.mock("./foo"); // this happens automatically with automocking
+const foo = require("./foo");
 
-test('foo', () => {
-// foo is a mock function
-foo.mockImplementation(() => 42);
-console.log(foo());
-// > 42
+test("foo", () => {
+  // foo is a mock function
+  foo.mockImplementation(() => 42);
+  console.log(foo());
+  // > 42
 });
 
 const myMockFn = jest
   .fn()
-  .mockImplementationOnce(cb => cb(null, true))
-  .mockImplementationOnce(cb => cb(null, false));
+  .mockImplementationOnce((cb) => cb(null, true))
+  .mockImplementationOnce((cb) => cb(null, false));
 
-test('myMockFn', () => {
+test("myMockFn", () => {
   myMockFn((err, val) => console.log(val));
   // > true
 
@@ -24,11 +24,11 @@ test('myMockFn', () => {
 });
 
 const myMockFn2 = jest
-  .fn(() => 'default')
-  .mockImplementationOnce(() => 'first call')
-  .mockImplementationOnce(() => 'second call');
+  .fn(() => "default")
+  .mockImplementationOnce(() => "first call")
+  .mockImplementationOnce(() => "second call");
 
-  test('myMockFn2', () => {
-console.log(myMockFn2(), myMockFn2(), myMockFn2(), myMockFn2());
-// > 'first call', 'second call', 'default', 'default'
+test("myMockFn2", () => {
+  console.log(myMockFn2(), myMockFn2(), myMockFn2(), myMockFn2());
+  // > 'first call', 'second call', 'default', 'default'
 });
