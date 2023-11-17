@@ -35,7 +35,7 @@ test("fetchTodoError", async () => {
 
 // callbackは呼ばれずに終わるため、このテストは失敗する
 // 関数がcallback呼んで終わるケースとかあまり見たことがないが…
-xtest('the data is peanut butter', () => {
+xtest("the data is peanut butter", () => {
   expect.assertions(1);
 
   function callback(error, data) {
